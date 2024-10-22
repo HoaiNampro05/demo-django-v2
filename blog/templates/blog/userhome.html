@@ -7,9 +7,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            background-image: url('../image/green.jpg');
+            background-size: cover;
+            background-position: center;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
         .container {
             max-width: 800px;
@@ -22,7 +24,7 @@
         .add-post-btn {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #a75028;
+            background-color: #20be4f;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -31,7 +33,7 @@
             cursor: pointer;
         }
         .add-post-btn:hover {
-            background-color: #218838;
+            background-color: #44b119;
         }
         .post {
             background: #ffffff;
@@ -55,6 +57,7 @@
 <body>
     <div class="container">
         <h1>Bài viết của {{username }}</h1>
+        <h1 style="color: rgb(37, 214, 31);">This is VERSION 2</h1>
 
         <!-- Form để thêm bài viết mới -->
         <form action="{% url 'startaddpost' %}" method="POST">

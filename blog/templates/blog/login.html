@@ -7,12 +7,14 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-image: url('../image/green.jpg');
+            background-size: cover;
+            background-position: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            padding: 0;
         }
 
         .login-container {
@@ -45,14 +47,14 @@
         }
 
         .login-container input[type="submit"] {
-            background-color: #4CAF50;
+            background-color: #218f21;
             color: white;
             cursor: pointer;
             border: none;
         }
 
         .login-container input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #27b63e;
         }
 
         .error {
@@ -66,7 +68,7 @@
         }
 
         .footer a {
-            color: #4CAF50;
+            color: #1f7535;
             text-decoration: none;
         }
     </style>
@@ -74,7 +76,7 @@
 <body>
 
 <div class="login-container">
-    <h2>Đăng nhập</h2>
+    <h2 style="color:rgb(55, 224, 49)">Đăng nhập cho version 2</h2>
     <form method="POST" action="{% url 'processlogin' %}">
         {% csrf_token %}
         <label for="username">Tên đăng nhập:</label>
